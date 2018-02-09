@@ -20,6 +20,7 @@ def set_logger(f):
             parameters={
             'projectID': pid,
             'taskID': tid,
+            'function': '%s.%s' % (f.__module__, f.func_name),
         })
         args = args + (logger, )
         return f(*args, **kwargs)
