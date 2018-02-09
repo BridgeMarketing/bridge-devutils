@@ -1,8 +1,6 @@
 import logging
 from logging.handlers import TimedRotatingFileHandler
 
-import settings
-
 from functools import wraps, update_wrapper
 
 from flask import request
