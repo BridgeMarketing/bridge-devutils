@@ -31,7 +31,7 @@ def set_logger(f):
         try:
             j = request.json
             pid = j['newState']['projectID']
-            tid = j['newState']['taskID']
+            tid = j['newState']['ID']
         except Exception as e:
             pass
         l = LogstashLogger(logger,
